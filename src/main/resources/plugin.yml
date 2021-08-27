@@ -1,0 +1,5 @@
+name: KotlinLoader
+main: com.github.wow.kotlinloader.PluginMain
+version: 1.0-SNAPSHOT
+load: STARTUP
+authors: ['hwangseonu', 'alvin0319']
