@@ -28,18 +28,44 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package com.github.wow.kotlinloader
+package com.github.wow.kotlinloader.loader
 
-import org.bukkit.plugin.java.JavaPlugin
+import org.bukkit.event.Event
+import org.bukkit.event.Listener
+import org.bukkit.plugin.Plugin
+import org.bukkit.plugin.PluginDescriptionFile
+import org.bukkit.plugin.PluginLoader
+import org.bukkit.plugin.RegisteredListener
+import java.io.File
+import java.util.regex.Pattern
 
-class PluginMain : JavaPlugin() {
+class KotlinPluginLoader : PluginLoader {
 
-    // Manager init -> plugins -> .jar -> class loader -> plugin instance -> onLoad
-    // onEnable
-
-    override fun onLoad() {
+    override fun loadPlugin(file: File): Plugin {
+        TODO("Not yet implemented")
     }
 
-    override fun onDisable() {
+    override fun getPluginDescription(file: File): PluginDescriptionFile {
+        TODO("Not yet implemented")
     }
+
+    override fun getPluginFileFilters(): Array<Pattern> {
+        TODO("Not yet implemented")
+    }
+
+    override fun createRegisteredListeners(
+        listener: Listener,
+        plugin: Plugin
+    ): MutableMap<Class<out Event>, MutableSet<RegisteredListener>> {
+        TODO("Not yet implemented")
+    }
+
+    override fun enablePlugin(plugin: Plugin) {
+        TODO("Not yet implemented")
+    }
+
+    override fun disablePlugin(plugin: Plugin) {
+        TODO("Not yet implemented")
+    }
+
 }
